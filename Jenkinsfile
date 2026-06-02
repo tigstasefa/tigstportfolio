@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'ls -l index.html'
+               sh `ls -l index.html`
             }
         }
         stage('Test') {
